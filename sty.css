@@ -1,0 +1,117 @@
+body{
+  background:linear-gradient(45deg,black,rgba(255, 166, 0, 0.8),black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: ani 4s ease-in-out infinite alternate;
+
+}
+@keyframes ani {
+  0%
+  {
+    background: #c2e59c;
+  }
+  100%
+  {
+    background: #64b3f4;
+  }
+  
+}
+.screen
+{
+  text-align: end;
+  width:97%;
+  padding: .7rem;
+  font-size: 2rem;
+  font-family: monospace;
+  box-shadow: 1px 1px 8px teal,-1px -1px 8px teal;
+}
+.head
+{
+  position: relative;
+  display: flex;
+  align-items:flex-start;
+  height: 100vh;
+  text-align: center;
+  font-family: monospace;
+  font-size: 3rem;
+  color: #c2e59c;
+}
+.calculator
+{
+
+ background: linear-gradient(45deg,#c2e59c,#64b3f4);
+border-radius:4% ;
+ padding: 3rem;
+ box-shadow: 1px 1px 8px black,-1px -1px 8px black;
+
+}
+.buttons
+{
+  width: 232px;
+  display: flex;
+  flex-wrap: wrap;
+}
+button{
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: whitesmoke;
+  box-shadow: 2px 2px 8px grey , -2px -2px 8px grey;
+  margin: 3.2%;
+  margin-bottom:10%;
+  font-size: 40px;
+  width: 40px;
+  padding:.2rem;
+  height: 50px;
+  border-radius: 60%;
+  transition: .3s ease-in-out;
+
+}
+
+button:hover{
+  color: rgba(0, 0, 0, 0.7);
+  background: white;
+  transform: scale(1.1);
+
+}
+button:active{
+  color: rgba(255, 166, 0, 0.8);
+  background: white;
+}
+#equal
+{
+  color: black;
+  background: limegreen;
+}
+#equal:hover{
+  color: limegreen;
+  background: black;
+}
+#clear
+{
+  border-radius: 3%;
+  color: black;
+  background: none;
+  width: 80%;
+  transition: .6s ease-out;
+  margin-left: 10%;
+  margin-top: 10%;
+
+}
+
+  
+#clear:hover{
+  background: #0000003a;
+  color: lime;
+  transform: scale(0.9);
+
+}
+@media screen and (max-width:700px) {
+  .calculator
+  {
+    padding: 2rem;
+  }
+  
+
+}
